@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Conversor de Monedas</title>   
+
+      
+        
+
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+    <body>
+        <div class="background">
+            <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+        <div class="container">
+            <form id="form1">
+                <h1>Conversor de Monedas</h1>
+                <label for="clp">Pesos Chilenos</label>
+                <input
+                    name="clp"
+                    id="clp"
+                    type="number"
+                    placeholder="Ingrese el monto en Pesos Chilenos"
+                    min="0"
+                />
+                <label for="monedas">Moneda a convertir:</label>
+                <select name="selectMonedas" id="selectMonedas">
+                    <option value="" disabled selected hidden>
+                        Seleccione moneda
+                    </option>
+                    <option id="selectEuro" value="euro">Euros</option>
+                    <option id="selectDolar" value="dolar">Dolar</option>
+                    <option id="selectUf" value="uf">UF</option>
+                </select>
+                <button class="button-1" type="submit">Buscar</button>
+                <h3  id="result">...</h3>
+            </form>
+            <div class="chart-container">
+                <h4>Valor de los últimos 10 días</h4>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="assets/js/main.js"></script>
+        
+    </div>
+    </body>
+</html>
